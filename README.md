@@ -15,7 +15,7 @@ LIHLogManager.addToLog(message, title: title)
 ```
 ####Get all records
 ```Swift
-LIHLogManager.addToLog(message, title: title)
+LIHLogManager.getRecords(nil)
 ```
 ####Clear log
 This will delete all the records.
@@ -25,6 +25,11 @@ LIHLogManager.clearLog()
 ####Get most recent 200 records
 ```Swift
 LIHLogManager.getRecords(200)
+```
+```
+####Delete a record
+```Swift
+LIHLogManager.deleteRecord(withId: 5)
 ```
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
