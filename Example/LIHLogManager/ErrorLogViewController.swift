@@ -37,7 +37,7 @@ class ErrorLogViewController: UIViewController {
     //MARK - Private Methods
     func loadData() {
         
-        //get the latest 200 records. Use nil to get all records
+        //get the latest 200 records. Use nil to get all records.
         self.logs = LIHLogManager.getRecords(200)
     }
     
