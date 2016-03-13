@@ -26,7 +26,7 @@ LIHLogManager.clearLog()
 ```Swift
 LIHLogManager.getRecords(200)
 ```
-```
+
 ####Delete a record
 ```Swift
 LIHLogManager.deleteRecord(withId: 5)
