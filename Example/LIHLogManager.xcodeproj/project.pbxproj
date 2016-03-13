@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		4E4F163BE9796D73D952F448 /* Pods_LIHLogManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AD9925356F1E30CD7ECEDE /* Pods_LIHLogManager_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		78979E001C955BCB00EBE3CB /* ErrorLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78979DFE1C955BCB00EBE3CB /* ErrorLogTableViewCell.swift */; };
+		78979E011C955BCB00EBE3CB /* ErrorLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78979DFF1C955BCB00EBE3CB /* ErrorLogViewController.swift */; };
+		78979E0B1C955DE600EBE3CB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 78979E0A1C955DE600EBE3CB /* libsqlite3.tbd */; };
 		8A63C7EA28F8DF7CCCEBED8A /* Pods_LIHLogManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9919B8095856A20BB4C9C1 /* Pods_LIHLogManager_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +38,6 @@
 		607FACD01AFB9204008FA782 /* LIHLogManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LIHLogManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -44,6 +45,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6795FEF21B7D6106DB2ACEAD /* Pods-LIHLogManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LIHLogManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LIHLogManager_Tests/Pods-LIHLogManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		78979DFE1C955BCB00EBE3CB /* ErrorLogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorLogTableViewCell.swift; sourceTree = "<group>"; };
+		78979DFF1C955BCB00EBE3CB /* ErrorLogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorLogViewController.swift; sourceTree = "<group>"; };
+		78979E0A1C955DE600EBE3CB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		890044E0563BFB9D1587802F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F6AD9925356F1E30CD7ECEDE /* Pods_LIHLogManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LIHLogManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F93125A894995C4D1131B0AC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78979E0B1C955DE600EBE3CB /* libsqlite3.tbd in Frameworks */,
 				8A63C7EA28F8DF7CCCEBED8A /* Pods_LIHLogManager_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +77,7 @@
 		3FF5CA99A29598B3EEB3ED47 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				78979E0A1C955DE600EBE3CB /* libsqlite3.tbd */,
 				5D9919B8095856A20BB4C9C1 /* Pods_LIHLogManager_Example.framework */,
 				F6AD9925356F1E30CD7ECEDE /* Pods_LIHLogManager_Tests.framework */,
 			);
@@ -102,8 +108,9 @@
 		607FACD21AFB9204008FA782 /* Example for LIHLogManager */ = {
 			isa = PBXGroup;
 			children = (
+				78979DFE1C955BCB00EBE3CB /* ErrorLogTableViewCell.swift */,
+				78979DFF1C955BCB00EBE3CB /* ErrorLogViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -359,7 +366,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				78979E001C955BCB00EBE3CB /* ErrorLogTableViewCell.swift in Sources */,
+				78979E011C955BCB00EBE3CB /* ErrorLogViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

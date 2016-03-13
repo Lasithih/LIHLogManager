@@ -1,0 +1,6 @@
+framework module LIHLogManager {
+  umbrella header "LIHLogManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
