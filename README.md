@@ -6,10 +6,36 @@
 [![Platform](https://img.shields.io/cocoapods/p/LIHLogManager.svg?style=flat)](http://cocoapods.org/pods/LIHLogManager)
 
 ## Usage
+```Swift
+import LIHLogManager
+```
+####Add a record to log
+```Swift
+LIHLogManager.addToLog(message, title: title)
+```
+####Get all records
+```Swift
+LIHLogManager.getRecords(nil)
+```
+####Clear log
+This will delete all the records.
+```Swift
+LIHLogManager.clearLog()
+```
+####Get most recent 200 records
+```Swift
+LIHLogManager.getRecords(200)
+```
+```
+####Delete a record
+```Swift
+LIHLogManager.deleteRecord(withId: 5)
+```
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+iOS 7+
 
 ## Installation
 
@@ -22,7 +48,7 @@ pod "LIHLogManager"
 
 ## Author
 
-Lasith Hettiarachchi, lasith.h@fidenz.com
+Lasith Hettiarachchi, lasithih@yahoo.com
 
 ## License
 
