@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nxH-EO-5Rh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--LIHLogManager-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ErrorLogViewController" customModule="LIHLogManager_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rjl-9l-ypG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="logCell" rowHeight="100" id="5s7-rG-vIj" customClass="ErrorLogTableViewCell" customModule="LIHLogManager_Example" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5s7-rG-vIj" id="as7-OA-xwr">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.10.2015  12:12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHC-E1-pkk">
+                                                    <rect key="frame" x="20" y="10" width="110" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FU8-QF-agf">
+                                                    <rect key="frame" x="20" y="31" width="98" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid Security Tocken" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="DxR-5m-bhZ">
+                                                    <rect key="frame" x="20" y="53" width="280" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="DxR-5m-bhZ" secondAttribute="trailing" constant="20" id="0mi-5r-pVj"/>
+                                                <constraint firstItem="FU8-QF-agf" firstAttribute="leading" secondItem="as7-OA-xwr" secondAttribute="leading" constant="20" id="O07-Re-eaM"/>
+                                                <constraint firstItem="DxR-5m-bhZ" firstAttribute="leading" secondItem="as7-OA-xwr" secondAttribute="leading" constant="20" id="Yk9-Jg-Tdw"/>
+                                                <constraint firstItem="DxR-5m-bhZ" firstAttribute="top" secondItem="FU8-QF-agf" secondAttribute="bottom" constant="4" id="ZnZ-jR-Zjs"/>
+                                                <constraint firstItem="QHC-E1-pkk" firstAttribute="leading" secondItem="as7-OA-xwr" secondAttribute="leading" constant="20" id="cL9-Xa-ane"/>
+                                                <constraint firstItem="FU8-QF-agf" firstAttribute="top" secondItem="QHC-E1-pkk" secondAttribute="bottom" constant="4" id="foC-fg-GDX"/>
+                                                <constraint firstItem="QHC-E1-pkk" firstAttribute="top" secondItem="as7-OA-xwr" secondAttribute="top" constant="10" id="lxH-Os-wVp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblDateTime" destination="QHC-E1-pkk" id="807-Js-eNb"/>
+                                            <outlet property="lblMessage" destination="DxR-5m-bhZ" id="Y8H-Rl-udE"/>
+                                            <outlet property="lblTitle" destination="FU8-QF-agf" id="vpJ-cN-l3K"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="S8M-Ff-OHj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rjl-9l-ypG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="2Hl-xj-PRf"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="rjl-9l-ypG" secondAttribute="bottom" id="3M0-Mc-I1J"/>
+                            <constraint firstItem="rjl-9l-ypG" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="WQi-XL-QlH"/>
+                            <constraint firstAttribute="trailing" secondItem="rjl-9l-ypG" secondAttribute="trailing" id="zMb-C5-sb7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="LIHLogManager" id="Auy-bN-Def">
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="KDN-Ny-IY1">
+                            <connections>
+                                <action selector="clearPressed:" destination="vXZ-lx-hvc" id="JE0-cR-MUG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aha-gl-Xwa">
+                            <connections>
+                                <action selector="addPressed:" destination="vXZ-lx-hvc" id="zUe-aJ-kNz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="tableLogs" destination="rjl-9l-ypG" id="j54-hF-7wG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1049" y="337"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="URC-Ie-MaF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nxH-EO-5Rh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zDG-W2-B68">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="pQJ-as-TT9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mvr-7l-JkS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="937"/>
+        </scene>
+    </scenes>
+</document>
