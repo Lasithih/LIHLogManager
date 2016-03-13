@@ -105,7 +105,7 @@ class ErrorLogViewController: UIViewController {
 }
 
 
-extension ErrorLogViewController: UITableViewDataSource {
+extension ErrorLogViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -123,4 +123,22 @@ extension ErrorLogViewController: UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let alert = UIAlertController(title: "Confirm", message: "Are you sure you want to delete this record?", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Delete", style: UIAlertActionStyle.Destructive, handler: { (_) -> Void in
+            
+            if LIHLogManager.deleteRecord(withId: self.logs[indexPath.row].id) {
+                self.refreshTable(self.tableLogs)
+            }
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
 }
+
+

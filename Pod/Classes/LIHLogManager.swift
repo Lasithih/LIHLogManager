@@ -39,4 +39,10 @@ public class LIHLogManager {
         let logDb = LIHLogDb.getInstance()
         return logDb.clearAll()
     }
+    
+    public static func deleteRecord(withId id: Int) -> Bool {
+        
+        let logDb = LIHLogDb.getInstance()
+        return logDb.deleteRecord(withId: id)
+    }
 }

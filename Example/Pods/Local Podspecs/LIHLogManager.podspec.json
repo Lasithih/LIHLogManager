@@ -1,16 +1,16 @@
 {
   "name": "LIHLogManager",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "LIHLogManager is simple to use log",
   "description": "LIHLogManager is simple to use logger with sqlite database written in Swift which can be used when the debugger is not available (Background actions).",
   "homepage": "https://github.com/Lasithih/LIHLogManager",
   "license": "MIT",
   "authors": {
-    "Lasith Hettiarachchi": "lasith.h@fidenz.com"
+    "Lasith Hettiarachchi": "lasithih@yahoo.com"
   },
   "source": {
     "git": "https://github.com/Lasithih/LIHLogManager.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"

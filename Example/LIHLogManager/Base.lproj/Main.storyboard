@@ -66,6 +66,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="S8M-Ff-OHj"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="ORf-Wf-A7x"/>
                                 </connections>
                             </tableView>
                         </subviews>

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CD423CFDE390C059AA6E6642'
+               BlueprintIdentifier = 'E35B039CDCCC422A9E6D1A21'
                BlueprintName = 'LIHLogManager'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'LIHLogManager.framework'>

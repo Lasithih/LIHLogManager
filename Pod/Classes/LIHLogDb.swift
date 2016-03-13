@@ -145,6 +145,23 @@ class LIHLogDb {
         
     }
     
+    func deleteRecord(withId id: Int) -> Bool {
+        
+        let DB = FMDatabase(path: self.databasePath as String)
+        
+        if DB.open() {
+            
+            let query = "delete from \(Identifier.TABLE_LOG) where \(Identifier.LOG_ID)='\(id)'"
+            
+            let result = DB.executeStatements(query)
+            
+            return result
+            
+        } else {
+            return false
+        }
+    }
+    
     func fetchRecords(numberOfRecords: Int?) -> [LIHLog]{
         
         var logs: [LIHLog] = []
@@ -201,7 +218,7 @@ class LIHLogDb {
     
     
     
-    class Identifier {
+    struct Identifier {
     
         static let TABLE_LOG: String = "tableLog"
         static let LOG_ID: String = "logId"

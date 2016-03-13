@@ -2,7 +2,7 @@ PODS:
   - FMDB (2.6):
     - FMDB/standard (= 2.6)
   - FMDB/standard (2.6)
-  - LIHLogManager (0.1.0):
+  - LIHLogManager (0.1.1):
     - FMDB
 
 DEPENDENCIES:
@@ -14,6 +14,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
-  LIHLogManager: 561adda94e047509ae7a9ebc36664b8250d00da0
+  LIHLogManager: b64424d9f079cb01839bc3bf5a3f82c1904a9b41
 
 COCOAPODS: 0.39.0
